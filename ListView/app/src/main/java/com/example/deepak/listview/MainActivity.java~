@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lvStudents = (ListView) findViewById(R.id.lvStudents)  ;
+        lvStudents = (ListView) findViewById(R.id.lvStudents);
 
         ArrayAdapter<String> studentAdapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1,
                 students
-        ) ;
+        );
 
         lvStudents.setAdapter(studentAdapter);
     }
